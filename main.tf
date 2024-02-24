@@ -1,6 +1,6 @@
 terraform {
 	  backend "s3" {
-    bucket = "fg-bucket-02"
+    bucket = "${{TERRAFORM:TF_AWS_BUCKET}}"
     key    = "dyuti/local/terraform.tfstate"
   }
 }
